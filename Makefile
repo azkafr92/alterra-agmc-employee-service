@@ -1,4 +1,4 @@
-IMAGE_TAG_NAME=azkafr92/meeting-room-management-employee-service:latest
+IMAGE_TAG_NAME=azkafr92/employee-service:latest
 build:
 	go build -o ./employee-service
 
@@ -9,7 +9,7 @@ run:
 	clear && go run main.go
 
 show-test-result:
-	go tool cover -html=cover.ou
+	go tool cover -html=cover.out
 
 stop:
 	docker compose stop
